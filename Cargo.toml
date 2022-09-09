@@ -9,7 +9,7 @@ cortex-m-rt = "0.7.0"
 
 defmt = "0.3"
 defmt-rtt = "0.3"
-panic-probe = "0.3"
+panic-probe = { version = "0.3", features = ["print-defmt"] }
 
 embassy-executor = { version = "0.1.0", git = "https://github.com/embassy-rs/embassy", features = ["defmt", "integrated-timers"] }
 embassy-time = { version = "0.1.0", git = "https://github.com/embassy-rs/embassy", features = ["defmt", "defmt-timestamp-uptime"] }

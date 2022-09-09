@@ -208,7 +208,7 @@ dependencies = [
 [[package]]
 name = "embassy-cortex-m"
 version = "0.1.0"
-source = "git+https://github.com/embassy-rs/embassy#22c32b5d5ccaea49d6cf9a08a88433928c1609d3"
+source = "git+https://github.com/embassy-rs/embassy#573c433f64a049d4e0d501df1194c3228aae0863"
 dependencies = [
  "atomic-polyfill 1.0.1",
  "cfg-if",
@@ -223,7 +223,7 @@ dependencies = [
 [[package]]
 name = "embassy-embedded-hal"
 version = "0.1.0"
-source = "git+https://github.com/embassy-rs/embassy#22c32b5d5ccaea49d6cf9a08a88433928c1609d3"
+source = "git+https://github.com/embassy-rs/embassy#573c433f64a049d4e0d501df1194c3228aae0863"
 dependencies = [
  "embassy-sync",
  "embedded-hal 0.2.7",
@@ -237,7 +237,7 @@ dependencies = [
 [[package]]
 name = "embassy-executor"
 version = "0.1.0"
-source = "git+https://github.com/embassy-rs/embassy#22c32b5d5ccaea49d6cf9a08a88433928c1609d3"
+source = "git+https://github.com/embassy-rs/embassy#573c433f64a049d4e0d501df1194c3228aae0863"
 dependencies = [
  "atomic-polyfill 1.0.1",
  "cfg-if",
@@ -252,12 +252,12 @@ dependencies = [
 [[package]]
 name = "embassy-futures"
 version = "0.1.0"
-source = "git+https://github.com/embassy-rs/embassy#22c32b5d5ccaea49d6cf9a08a88433928c1609d3"
+source = "git+https://github.com/embassy-rs/embassy#573c433f64a049d4e0d501df1194c3228aae0863"
 
 [[package]]
 name = "embassy-hal-common"
 version = "0.1.0"
-source = "git+https://github.com/embassy-rs/embassy#22c32b5d5ccaea49d6cf9a08a88433928c1609d3"
+source = "git+https://github.com/embassy-rs/embassy#573c433f64a049d4e0d501df1194c3228aae0863"
 dependencies = [
  "num-traits",
 ]
@@ -265,7 +265,7 @@ dependencies = [
 [[package]]
 name = "embassy-macros"
 version = "0.1.0"
-source = "git+https://github.com/embassy-rs/embassy#22c32b5d5ccaea49d6cf9a08a88433928c1609d3"
+source = "git+https://github.com/embassy-rs/embassy#573c433f64a049d4e0d501df1194c3228aae0863"
 dependencies = [
  "darling",
  "proc-macro2",
@@ -276,7 +276,7 @@ dependencies = [
 [[package]]
 name = "embassy-rp"
 version = "0.1.0"
-source = "git+https://github.com/embassy-rs/embassy#22c32b5d5ccaea49d6cf9a08a88433928c1609d3"
+source = "git+https://github.com/embassy-rs/embassy#573c433f64a049d4e0d501df1194c3228aae0863"
 dependencies = [
  "atomic-polyfill 1.0.1",
  "cfg-if",
@@ -316,7 +316,7 @@ dependencies = [
 [[package]]
 name = "embassy-sync"
 version = "0.1.0"
-source = "git+https://github.com/embassy-rs/embassy#22c32b5d5ccaea49d6cf9a08a88433928c1609d3"
+source = "git+https://github.com/embassy-rs/embassy#573c433f64a049d4e0d501df1194c3228aae0863"
 dependencies = [
  "atomic-polyfill 1.0.1",
  "cfg-if",
@@ -329,7 +329,7 @@ dependencies = [
 [[package]]
 name = "embassy-time"
 version = "0.1.0"
-source = "git+https://github.com/embassy-rs/embassy#22c32b5d5ccaea49d6cf9a08a88433928c1609d3"
+source = "git+https://github.com/embassy-rs/embassy#573c433f64a049d4e0d501df1194c3228aae0863"
 dependencies = [
  "atomic-polyfill 1.0.1",
  "cfg-if",
@@ -343,7 +343,7 @@ dependencies = [
 [[package]]
 name = "embassy-usb"
 version = "0.1.0"
-source = "git+https://github.com/embassy-rs/embassy#22c32b5d5ccaea49d6cf9a08a88433928c1609d3"
+source = "git+https://github.com/embassy-rs/embassy#573c433f64a049d4e0d501df1194c3228aae0863"
 dependencies = [
  "defmt",
  "embassy-futures",
@@ -559,6 +559,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3ab1f00eac22bd18f8e5cae9555f2820b3a0c166b5b556ee3e203746ea6dcf3a"
 dependencies = [
  "cortex-m",
+ "defmt",
 ]
 
 [[package]]
