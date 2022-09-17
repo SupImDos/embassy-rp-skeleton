@@ -30,11 +30,8 @@ if you _aren't_ using a debugger and want the runner to flash the firmware via U
 ## Requirements
 * Ubuntu
 * Raspberry Pi Pico
-* CMSIS-DAP Debugger Probe
-* [Rust][12]
+* CMSIS-DAP Debugger Probe (or another Raspberry Pi Pico)
 * Rust Toolchain ([`cargo`][7], [`rustup`][13])
-* Rust Cortex-M Target Toolchain Support (`thumbv6m-none-eabi`)
-* Rust Embedded Tooling ([`probe-run`][6], [`flip-link`][5], etc.)
 
 ## Setup
 ### System Setup
