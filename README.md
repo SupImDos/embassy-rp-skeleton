@@ -74,15 +74,15 @@ $ $ cargo install flip-link
 ```
 
 ### Probe Setup
-Any CMSIS-DAP compatible debugger probe can be used with [`probe-run`][6].
-A short list of compatible debug probes is available here: [Debug Probes][15].
-
-You can also use a second Rasperry Pi Pico as your debugger probe.
+You can use a Raspberry Pi Pico as your debugger probe.
 1. Download CMSIS-DAP debugger firmware [`DapperMime`][14] for the Raspberry Pi Pico
 2. Boot the Raspberry Pi Pico in "Bootloader Mode" by holding the _BOOTSEL_ button while plugging it in
 3. Open the mounted Raspberry Pi Pico storage device
 4. Copy the `raspberry_pi_pico-DapperMime.uf2` onto the Raspberry Pi Pico
 5. Firmware will be flashed to the Raspberry Pi Pico and it will disconnect
+
+Any CMSIS-DAP compatible debugger probe can be used with [`probe-run`][6]. A short list of compatible debug probes is
+available here: [Debug Probes][15].
 
 ### Hardware Setup
 **TODO**
