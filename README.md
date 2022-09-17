@@ -20,9 +20,9 @@ if you _aren't_ using a debugger and want the runner to flash the firmware via U
 ## Table of Contents
 1. [Requirements](#requirements)
 2. [Setup](#setup)
-    2.1. [System Setup](#system-setup)
-    2.2. [Probe Setup](#probe-setup)
-    2.2. [Hardware Setup](#hardware-setup)
+    2.1 [System Setup](#system-setup)
+    2.2 [Probe Setup](#probe-setup)
+    2.2 [Hardware Setup](#hardware-setup)
 3. [Usage](#usage)
 4. [Runners](#runners)
 5. [Appendix](#appendix)
