@@ -1,5 +1,4 @@
 # Embassy RP Skeleton
-## Summary
 The **Embassy RP Skeleton** project template is intended as a starting point for developing your own firmware for the
 [`rp2040`][1] based on the [`embassy`][2] asynchronous embedded development framework for [Rust][12].
 
