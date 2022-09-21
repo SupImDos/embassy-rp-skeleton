@@ -1,20 +1,20 @@
 # Embassy RP Skeleton
-The **Embassy RP Skeleton** project template is intended as a starting point for developing your own firmware for the
-[`rp2040`][1] based on the [`embassy`][2] asynchronous embedded development framework for [Rust][12].
+The **Embassy RP Skeleton** repository is a project template intended as a starting point for developing your own
+firmware for the [`rp2040`][1] based on the [`embassy`][2] asynchronous embedded development framework for [Rust][12].
 
 It includes all of the [`knurling-rs`][3] tooling ([`defmt`][4], [`defmt-rtt`][4], [`panic-probe`][4], [`flip-link`][5],
-[`probe-run`][6]) to improve the development process.
+[`probe-run`][6]) to enhance the embedded development process.
 
 The default [`cargo`][7] runner is configured as [`probe-run`][6], so you can build, flash and run your firmware _with_
-output from the device via RTT with:
+output from the device via a CMSIS-DAP compatible debug probe with the command:
 
 ```shell
-$ cargo run --release
+$ cargo run
 ```
 
 If you want to use a different runner with your debugger (e.g., [`cargo-embed`][8], [`probe-rs-debugger`][9], etc.) or
 if you _aren't_ using a debugger and want the runner to flash the firmware via USB (e.g., [`elf2uf2-rs`][10],
-[`picotool`][11], etc.) then see the [Runners](#runners) section.
+[`picotool`][11], etc.) then see: [Alternative Runners][17]
 
 ## Table of Contents
 1. [Requirements](#requirements)
@@ -23,13 +23,12 @@ if you _aren't_ using a debugger and want the runner to flash the firmware via U
     2. [Probe Setup](#probe-setup)
     3. [Hardware Setup](#hardware-setup)
 3. [Usage](#usage)
-4. [Runners](#runners)
-5. [Appendix](#appendix)
+6. [Appendix](#appendix)
 
 ## Requirements
 * Ubuntu
 * Raspberry Pi Pico
-* CMSIS-DAP Debugger Probe (or another Raspberry Pi Pico)
+* CMSIS-DAP Debugger Probe (*or* another Raspberry Pi Pico)
 * Rust Toolchain ([`cargo`][7], [`rustup`][13])
 
 ## Setup
@@ -70,7 +69,8 @@ $ $ cargo install flip-link
 ```
 
 ### Probe Setup
-You can use a Raspberry Pi Pico as your debugger probe.
+You can use a Raspberry Pi Pico as a CMSIS-DAP compatible debug probe.
+
 1. Download CMSIS-DAP debugger firmware [`DapperMime`][14] for the Raspberry Pi Pico
 2. Boot the Raspberry Pi Pico in "Bootloader Mode" by holding the _BOOTSEL_ button while plugging it in
 3. Open the mounted Raspberry Pi Pico storage device
@@ -78,11 +78,11 @@ You can use a Raspberry Pi Pico as your debugger probe.
 5. Firmware will be flashed to the Raspberry Pi Pico and it will disconnect
 
 Any CMSIS-DAP compatible debugger probe can be used with [`probe-run`][6]. A short list of compatible debug probes is
-available here: [Debug Probes][15].
+available here: [Alternative Debug Probes][15].
 
 ### Hardware Setup
 **TODO**
-  - Connecting the debugger
+  - Connecting the debugger (image, link to pdf)
   - Raspberry Pi Pico development board
 
 ## Usage
@@ -108,10 +108,6 @@ $ DEFMT_LOG=debug cargo run
 $ DEFMT_LOG=error cargo run --release
 ```
 
-## Runners
-**TODO**
-  - Using other runners
-
 ## Appendix
 **TODO**
   - Links, resources, references and guides
@@ -132,6 +128,8 @@ $ DEFMT_LOG=error cargo run --release
 [13]: https://rustup.rs/
 [14]: https://github.com/majbthrd/DapperMime
 [15]: https://github.com/rp-rs/rp2040-project-template/blob/main/debug_probes.md
+[16]: https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf
+[17]: https://github.com/rp-rs/rp2040-project-template#alternative-runners
 
 <!-- Other Stuff -->
 <!--
