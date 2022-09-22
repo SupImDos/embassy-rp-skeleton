@@ -6,15 +6,15 @@ It includes all of the [`knurling-rs`][4] tooling ([`defmt`][5], [`defmt-rtt`][5
 [`probe-run`][7]) to enhance the embedded development process.
 
 The default [`cargo`][8] runner is configured as [`probe-run`][7], so you can build, flash and run your firmware _with_
-output from the device via a [`probe-rs`][27] compatible debug probe with the command:
+output from the device via a [`probe-rs`][9] compatible debug probe with the command:
 
 ```shell
 $ cargo run
 ```
 
-If you want to use a different runner with your debugger (e.g., [`cargo-embed`][9], [`probe-rs-debugger`][10], etc.) or
-if you _aren't_ using a debugger and want the runner to flash the firmware via USB (e.g., [`elf2uf2-rs`][11],
-[`picotool`][12], etc.) then see: [Alternative Runners][13]
+If you want to use a different runner with your debugger (e.g., [`cargo-embed`][10], [`probe-rs-debugger`][11], etc.) or
+if you _aren't_ using a debugger and want the runner to flash the firmware via USB (e.g., [`elf2uf2-rs`][12],
+[`picotool`][13], etc.) then see: [Alternative Runners][14]
 
 ## Table of Contents
 1. [Requirements](#requirements)
@@ -29,11 +29,11 @@ if you _aren't_ using a debugger and want the runner to flash the firmware via U
 * Ubuntu
 * Raspberry Pi Pico
 * Debug Probe (*or* another Raspberry Pi Pico)
-* Rust Toolchain ([`cargo`][8], [`rustup`][14])
+* Rust Toolchain ([`cargo`][8], [`rustup`][15])
 
 ## Setup
 ### System Setup
-1. Install [Rust][3] and [`cargo`][8] using [`rustup`][14]
+1. Install [Rust][3] and [`cargo`][8] using [`rustup`][15]
 ```shell
 # Install `rustup` for Rust Toolchain
 $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -71,21 +71,21 @@ $ $ cargo install flip-link
 ### Probe Setup
 You can use a Raspberry Pi Pico as a CMSIS-DAP debug probe.
 
-1. Download CMSIS-DAP debugger firmware [`DapperMime`][15] for the Raspberry Pi Pico
+1. Download CMSIS-DAP debugger firmware [`DapperMime`][16] for the Raspberry Pi Pico
 2. Boot the Raspberry Pi Pico in "Bootloader Mode" by holding the _BOOTSEL_ button while plugging it in
 3. Open the mounted Raspberry Pi Pico storage device
 4. Copy the `raspberry_pi_pico-DapperMime.uf2` onto the Raspberry Pi Pico
 5. Firmware will be flashed to the Raspberry Pi Pico and it will disconnect
 
-Any [`probe-rs`][27] compatible debug probe can be used with [`probe-run`][7]. For a short list of alternative
-compatible debug probes see: [Alternative Debug Probes][16].
+Any [`probe-rs`][9] compatible debug probe can be used with [`probe-run`][7]. For a short list of alternative
+compatible debug probes see: [Alternative Debug Probes][17].
 
 ### Hardware Setup
 #### Connecting the Raspberry Pi Pico Debug Probe
 The diagram below shows the wiring loom between Raspberry Pi Pico A (left) and Raspberry Pi Pico B (right), configuring
 Raspberry Pi Pico A as a debug probe.
 
-![Raspberry Pi Pico Debug Probe Wiring][17]
+![Raspberry Pi Pico Debug Probe Wiring][18]
 
 The connections shown in the diagram above are listed below.
 
@@ -99,7 +99,7 @@ Pico A VSYS -> Pico B VSYS
 ```
 
 For more information on the wiring loom and its connections, see:
-[Getting Started with Raspberry Pi Pico > Appendix A > Picoprobe Wiring][18]
+[Getting Started with Raspberry Pi Pico > Appendix A > Picoprobe Wiring][19]
 
 #### Raspberry Pi Pico Dev Board
 Alternatively, a custom printed Raspberry Pi Pico Dev Board can be used to enhance development, which includes:
@@ -111,10 +111,10 @@ Alternatively, a custom printed Raspberry Pi Pico Dev Board can be used to enhan
 * Breakout Pins
 * Selection of _VSys_ or _VBus_ Power Sources
 
-![Raspberry Pi Pico Dev Board Debugging][19]
+![Raspberry Pi Pico Dev Board Debugging][20]
 
 For more information on printing your own custom Raspberry Pi Pico Dev Board, see:
-[Raspberry Pi Pico Dev Board][20]
+[Raspberry Pi Pico Dev Board][21]
 
 ## Usage
 To run the firmware in debug mode:
@@ -144,29 +144,29 @@ $ DEFMT_LOG=error cargo run --release
 * [Raspberry Pi Pico][1]
 * [Rust][3]
 * [Cargo][8]
-* [Rustup][14]
+* [Rustup][15]
 * [Embassy][2]
 * [Knurling-RS `defmt`][5]
 * [Knurling-RS `flip-link`][6]
 * [Knurling-RS `probe-run`][7]
-* [Probe-RS `cargo-embed`][9]
-* [Probe-RS `probe-rs-debugger`][10]
-* [Raspberry Pi Pico `elf2uf2`][11]
-* [Raspberry Pi Pico `picotool`][12]
-* [CMSIS-DAP Firmware `DapperMime`][15]
+* [Probe-RS `cargo-embed`][10]
+* [Probe-RS `probe-rs-debugger`][11]
+* [Raspberry Pi Pico `elf2uf2`][12]
+* [Raspberry Pi Pico `picotool`][13]
+* [CMSIS-DAP Firmware `DapperMime`][16]
 
 #### Resources
-* [Rust Embedded Book][21]
-* [Awesome Embedded Rust][22]
-* [Getting Started with Raspberry Pi Pico][23]
-* [Ferrous Systems Embedded Training][24]
-* [Ferrous Systems Embedded Teaching Material][25]
-* [RP-RS App Template][26]
-* [RP-RS Alternative Debug Probes][16]
-* [RP-RS Alternative Runners][13]
+* [Rust Embedded Book][22]
+* [Awesome Embedded Rust][23]
+* [Getting Started with Raspberry Pi Pico][24]
+* [Ferrous Systems Embedded Training][25]
+* [Ferrous Systems Embedded Teaching Material][26]
+* [RP-RS App Template][27]
+* [RP-RS Alternative Debug Probes][17]
+* [RP-RS Alternative Runners][14]
 * [Knurling-RS App Template][4]
-* [Raspberry Pi Pico Dev Board][20]
-* [Probe-RS Probe Setup][27]
+* [Probe-RS Probe Setup][9]
+* [Raspberry Pi Pico Dev Board][21]
 
 
 <!-- Reference -->
@@ -178,22 +178,22 @@ $ DEFMT_LOG=error cargo run --release
 [6]: https://github.com/knurling-rs/flip-link
 [7]: https://github.com/knurling-rs/probe-run
 [8]: https://doc.rust-lang.org/cargo/
-[9]: https://github.com/probe-rs/cargo-embed
-[10]: https://github.com/probe-rs/vscode
-[11]: https://github.com/JoNil/elf2uf2-rs
-[12]: https://github.com/raspberrypi/picotool
-[13]: https://github.com/rp-rs/rp2040-project-template#alternative-runners
-[14]: https://rustup.rs/
-[15]: https://github.com/majbthrd/DapperMime
-[16]: https://github.com/rp-rs/rp2040-project-template/blob/main/debug_probes.md
-[17]: https://user-images.githubusercontent.com/12226419/134785445-5f651d5a-eda9-4e94-8860-d2ef619dc27a.png
-[18]: https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf#%5B%7B%22num%22%3A64%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C115%2C696.992%2Cnull%5D
-[19]: https://timsavage.github.io/rpi-pico-devboard/assets/images/devboard-debugging.jpg
-[20]: https://timsavage.github.io/rpi-pico-devboard/
-[21]: https://docs.rust-embedded.org/book/
-[22]: https://github.com/rust-embedded/awesome-embedded-rust
-[23]: https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf
-[24]: https://embedded-trainings.ferrous-systems.com/
-[25]: https://github.com/ferrous-systems/teaching-material
-[26]: https://github.com/rp-rs/rp2040-project-template
-[27]: https://probe.rs/docs/getting-started/probe-setup/
+[9]: https://probe.rs/docs/getting-started/probe-setup/
+[10]: https://github.com/probe-rs/cargo-embed
+[11]: https://github.com/probe-rs/vscode
+[12]: https://github.com/JoNil/elf2uf2-rs
+[13]: https://github.com/raspberrypi/picotool
+[14]: https://github.com/rp-rs/rp2040-project-template#alternative-runners
+[15]: https://rustup.rs/
+[16]: https://github.com/majbthrd/DapperMime
+[17]: https://github.com/rp-rs/rp2040-project-template/blob/main/debug_probes.md
+[18]: https://user-images.githubusercontent.com/12226419/134785445-5f651d5a-eda9-4e94-8860-d2ef619dc27a.png
+[19]: https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf#%5B%7B%22num%22%3A64%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C115%2C696.992%2Cnull%5D
+[20]: https://timsavage.github.io/rpi-pico-devboard/assets/images/devboard-debugging.jpg
+[21]: https://timsavage.github.io/rpi-pico-devboard/
+[22]: https://docs.rust-embedded.org/book/
+[23]: https://github.com/rust-embedded/awesome-embedded-rust
+[24]: https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf
+[25]: https://embedded-trainings.ferrous-systems.com/
+[26]: https://github.com/ferrous-systems/teaching-material
+[27]: https://github.com/rp-rs/rp2040-project-template
