@@ -28,7 +28,7 @@ if you _aren't_ using a debugger and want the runner to flash the firmware via U
 ## Requirements
 * Ubuntu
 * Raspberry Pi Pico
-* CMSIS-DAP Debugger Probe (*or* another Raspberry Pi Pico)
+* CMSIS-DAP Debug Probe (*or* another Raspberry Pi Pico)
 * Rust Toolchain ([`cargo`][7], [`rustup`][13])
 
 ## Setup
@@ -77,13 +77,42 @@ You can use a Raspberry Pi Pico as a CMSIS-DAP compatible debug probe.
 4. Copy the `raspberry_pi_pico-DapperMime.uf2` onto the Raspberry Pi Pico
 5. Firmware will be flashed to the Raspberry Pi Pico and it will disconnect
 
-Any CMSIS-DAP compatible debugger probe can be used with [`probe-run`][6]. A short list of compatible debug probes is
-available here: [Alternative Debug Probes][15].
+Any CMSIS-DAP compatible debug probe can be used with [`probe-run`][6]. For a short list of alternative compatible debug
+probes see: [Alternative Debug Probes][15].
 
 ### Hardware Setup
-**TODO**
-  - Connecting the debugger (image, link to pdf)
-  - Raspberry Pi Pico development board
+The diagram below shows the wiring loom between Raspberry Pi Pico A (left) and Raspberry Pi Pico B (right), configuring
+Raspberry Pi Pico A as a debug probe.
+
+![Raspberry Pi Pico Debug Probe Wiring][18]
+
+The connections in the diagram above are listed below.
+
+```
+Pico A GND -> Pico B GND
+Pico A GP2 -> Pico B SWCLK
+Pico A GP3 -> Pico B SWDIO
+Pico A GP4/UART1 TX -> Pico B GP1/UART0 RX
+Pico A GP5/UART1 RX -> Pico B GP0/UART0 TX
+Pico A VSYS -> Pico B VSYS
+```
+
+For more information on the wiring loom, see:
+[Getting Started with Raspberry Pi Pico > Appendix A > Picoprobe Wiring][16]
+
+Alternatively, a custom printed Raspberry Pi Pico Dev Board can be used to enhance development with:
+
+* Debug Probe Host (Raspberry Pi Pico)
+* Detachable Target (Raspberry Pi Pico)
+* Serial Interface
+* Reset Button
+* Breakout Pins
+* Selection of _VSys_ or _VBus_ Power Sources
+
+![Raspberry Pi Pico Dev Board Debugging][19]
+
+For more information on printing and constructing your own custom Raspberry Pi Pico Dev Board, see:
+[Raspberry Pi Pico Dev Board][20]
 
 ## Usage
 To run the firmware in debug mode:
@@ -128,8 +157,11 @@ $ DEFMT_LOG=error cargo run --release
 [13]: https://rustup.rs/
 [14]: https://github.com/majbthrd/DapperMime
 [15]: https://github.com/rp-rs/rp2040-project-template/blob/main/debug_probes.md
-[16]: https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf
+[16]: https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf#%5B%7B%22num%22%3A64%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C115%2C696.992%2Cnull%5D
 [17]: https://github.com/rp-rs/rp2040-project-template#alternative-runners
+[18]: https://user-images.githubusercontent.com/12226419/134785445-5f651d5a-eda9-4e94-8860-d2ef619dc27a.png
+[19]: https://timsavage.github.io/rpi-pico-devboard/assets/images/devboard-debugging.jpg
+[20]: https://timsavage.github.io/rpi-pico-devboard/
 
 <!-- Other Stuff -->
 <!--
