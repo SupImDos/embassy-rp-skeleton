@@ -14,3 +14,7 @@ panic-probe = { version = "0.3", features = ["print-defmt"] }
 embassy-executor = { version = "0.1.0", git = "https://github.com/embassy-rs/embassy", features = ["defmt", "integrated-timers"] }
 embassy-time = { version = "0.1.0", git = "https://github.com/embassy-rs/embassy", features = ["defmt", "defmt-timestamp-uptime"] }
 embassy-rp = { version = "0.1.0", git = "https://github.com/embassy-rs/embassy", features = ["defmt", "unstable-traits", "nightly", "unstable-pac"] }
+
+ws2812-blocking-spi = "0.2"
+smart-leds = "0.3"
+rgb = "0.8"
