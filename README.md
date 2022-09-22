@@ -140,7 +140,7 @@ $ DEFMT_LOG=error cargo run --release
 ```
 
 ## Appendix
-**Documentation**
+#### Documentation
 * [Raspberry Pi Pico][1]
 * [Rust][12]
 * [Cargo][7]
@@ -155,7 +155,7 @@ $ DEFMT_LOG=error cargo run --release
 * [Raspberry Pi Pico `picotool`][11]
 * [CMSIS-DAP Firmware `DapperMime`][14]
 
-**Resources**
+#### Resources
 * [Rust Embedded Book][25]
 * [Awesome Embedded Rust][21]
 * [Getting Started with Raspberry Pi Pico][27]
