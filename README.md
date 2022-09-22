@@ -81,6 +81,7 @@ Any CMSIS-DAP compatible debug probe can be used with [`probe-run`][6]. For a sh
 probes see: [Alternative Debug Probes][15].
 
 ### Hardware Setup
+#### Connecting the Raspberry Pi Pico Debug Probe
 The diagram below shows the wiring loom between Raspberry Pi Pico A (left) and Raspberry Pi Pico B (right), configuring
 Raspberry Pi Pico A as a debug probe.
 
@@ -100,6 +101,7 @@ Pico A VSYS -> Pico B VSYS
 For more information on the wiring loom, see:
 [Getting Started with Raspberry Pi Pico > Appendix A > Picoprobe Wiring][16]
 
+#### Raspberry Pi Pico Dev Board
 Alternatively, a custom printed Raspberry Pi Pico Dev Board can be used to enhance development with:
 
 * Debug Probe Host (Raspberry Pi Pico)
