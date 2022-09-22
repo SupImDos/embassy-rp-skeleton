@@ -140,10 +140,34 @@ $ DEFMT_LOG=error cargo run --release
 ```
 
 ## Appendix
-* Documentation
-* Resources
-* Frameworks & Crates
-* Tools
+**Documentation**
+* [Raspberry Pi Pico][1]
+* [Rust][12]
+* [Cargo][7]
+* [Rustup][13]
+* [Embassy][2]
+* [Knurling-RS `defmt`][4]
+* [Knurling-RS `flip-link`][5]
+* [Knurling-RS `probe-run`][6]
+* [Probe-RS `cargo-embed`][8]
+* [Probe-RS `probe-rs-debugger`][9]
+* [Raspberry Pi Pico `elf2uf2`][10]
+* [Raspberry Pi Pico `picotool`][11]
+* [CMSIS-DAP Firmware `DapperMime`][14]
+
+**Resources**
+* [Rust Embedded Book][25]
+* [Awesome Embedded Rust][21]
+* [Getting Started with Raspberry Pi Pico][27]
+* [Ferrous Systems Embedded Training][24]
+* [Ferrous Systems Embedded Teaching Material][26]
+* [RP-RS App Template][22]
+* [RP-RS Alternative Debug Probes][15]
+* [RP-RS Alternative Runners][17]
+* [Knurling-RS App Template][3]
+* [Raspberry Pi Pico Dev Board][20]
+* [Probe-RS Probe Setup][23]
+
 
 <!-- Reference -->
 [1]: https://www.raspberrypi.com/documentation/microcontrollers/rp2040.html
@@ -168,10 +192,8 @@ $ DEFMT_LOG=error cargo run --release
 [20]: https://timsavage.github.io/rpi-pico-devboard/
 [21]: https://github.com/rust-embedded/awesome-embedded-rust
 [22]: https://github.com/rp-rs/rp2040-project-template
-[23]: https://timsavage.github.io/rpi-pico-devboard/
-[24]: https://github.com/embassy-rs/embassy
-[25]: https://probe.rs/docs/getting-started/probe-setup/
-[26]: https://embedded-trainings.ferrous-systems.com/
-[27]: https://docs.rust-embedded.org/book/
-[28]: https://github.com/ferrous-systems/teaching-material
-[29]: https://reltech.substack.com/p/getting-started-with-rust-on-a-raspberry
+[23]: https://probe.rs/docs/getting-started/probe-setup/
+[24]: https://embedded-trainings.ferrous-systems.com/
+[25]: https://docs.rust-embedded.org/book/
+[26]: https://github.com/ferrous-systems/teaching-material
+[27]: https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf
