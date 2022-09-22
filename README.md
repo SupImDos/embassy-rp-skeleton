@@ -140,8 +140,10 @@ $ DEFMT_LOG=error cargo run --release
 ```
 
 ## Appendix
-**TODO**
-  - Links, resources, references and guides
+* Documentation
+* Resources
+* Frameworks & Crates
+* Tools
 
 <!-- Reference -->
 [1]: https://www.raspberrypi.com/documentation/microcontrollers/rp2040.html
@@ -164,16 +166,12 @@ $ DEFMT_LOG=error cargo run --release
 [18]: https://user-images.githubusercontent.com/12226419/134785445-5f651d5a-eda9-4e94-8860-d2ef619dc27a.png
 [19]: https://timsavage.github.io/rpi-pico-devboard/assets/images/devboard-debugging.jpg
 [20]: https://timsavage.github.io/rpi-pico-devboard/
-
-<!-- Other Stuff -->
-<!--
-https://github.com/rust-embedded/awesome-embedded-rust
-https://github.com/rp-rs/rp2040-project-template
-https://timsavage.github.io/rpi-pico-devboard/
-https://github.com/embassy-rs/embassy
-https://probe.rs/docs/getting-started/probe-setup/
-https://embedded-trainings.ferrous-systems.com/
-https://docs.rust-embedded.org/book/
-https://github.com/ferrous-systems/teaching-material
-https://reltech.substack.com/p/getting-started-with-rust-on-a-raspberry
--->
+[21]: https://github.com/rust-embedded/awesome-embedded-rust
+[22]: https://github.com/rp-rs/rp2040-project-template
+[23]: https://timsavage.github.io/rpi-pico-devboard/
+[24]: https://github.com/embassy-rs/embassy
+[25]: https://probe.rs/docs/getting-started/probe-setup/
+[26]: https://embedded-trainings.ferrous-systems.com/
+[27]: https://docs.rust-embedded.org/book/
+[28]: https://github.com/ferrous-systems/teaching-material
+[29]: https://reltech.substack.com/p/getting-started-with-rust-on-a-raspberry
