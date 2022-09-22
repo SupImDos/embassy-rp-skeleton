@@ -6,7 +6,7 @@ It includes all of the [`knurling-rs`][4] tooling ([`defmt`][5], [`defmt-rtt`][5
 [`probe-run`][7]) to enhance the embedded development process.
 
 The default [`cargo`][8] runner is configured as [`probe-run`][7], so you can build, flash and run your firmware _with_
-output from the device via a CMSIS-DAP compatible debug probe with the command:
+output from the device via a [`probe-rs`][27] compatible debug probe with the command:
 
 ```shell
 $ cargo run
@@ -28,7 +28,7 @@ if you _aren't_ using a debugger and want the runner to flash the firmware via U
 ## Requirements
 * Ubuntu
 * Raspberry Pi Pico
-* CMSIS-DAP Debug Probe (*or* another Raspberry Pi Pico)
+* Debug Probe (*or* another Raspberry Pi Pico)
 * Rust Toolchain ([`cargo`][8], [`rustup`][14])
 
 ## Setup
@@ -69,7 +69,7 @@ $ $ cargo install flip-link
 ```
 
 ### Probe Setup
-You can use a Raspberry Pi Pico as a CMSIS-DAP compatible debug probe.
+You can use a Raspberry Pi Pico as a CMSIS-DAP debug probe.
 
 1. Download CMSIS-DAP debugger firmware [`DapperMime`][15] for the Raspberry Pi Pico
 2. Boot the Raspberry Pi Pico in "Bootloader Mode" by holding the _BOOTSEL_ button while plugging it in
@@ -77,8 +77,8 @@ You can use a Raspberry Pi Pico as a CMSIS-DAP compatible debug probe.
 4. Copy the `raspberry_pi_pico-DapperMime.uf2` onto the Raspberry Pi Pico
 5. Firmware will be flashed to the Raspberry Pi Pico and it will disconnect
 
-Any CMSIS-DAP compatible debug probe can be used with [`probe-run`][7]. For a short list of alternative compatible debug
-probes see: [Alternative Debug Probes][16].
+Any [`probe-rs`][27] compatible debug probe can be used with [`probe-run`][7]. For a short list of alternative
+compatible debug probes see: [Alternative Debug Probes][16].
 
 ### Hardware Setup
 #### Connecting the Raspberry Pi Pico Debug Probe
