@@ -87,7 +87,7 @@ Raspberry Pi Pico A as a debug probe.
 
 ![Raspberry Pi Pico Debug Probe Wiring][18]
 
-The connections in the diagram above are listed below.
+The connections shown in the diagram above are listed below.
 
 ```
 Pico A GND -> Pico B GND
@@ -98,11 +98,11 @@ Pico A GP5/UART1 RX -> Pico B GP0/UART0 TX
 Pico A VSYS -> Pico B VSYS
 ```
 
-For more information on the wiring loom, see:
+For more information on the wiring loom and its connections, see:
 [Getting Started with Raspberry Pi Pico > Appendix A > Picoprobe Wiring][16]
 
 #### Raspberry Pi Pico Dev Board
-Alternatively, a custom printed Raspberry Pi Pico Dev Board can be used to enhance development with:
+Alternatively, a custom printed Raspberry Pi Pico Dev Board can be used to enhance development, which includes:
 
 * Debug Probe Host (Raspberry Pi Pico)
 * Detachable Target (Raspberry Pi Pico)
@@ -113,7 +113,7 @@ Alternatively, a custom printed Raspberry Pi Pico Dev Board can be used to enhan
 
 ![Raspberry Pi Pico Dev Board Debugging][19]
 
-For more information on printing and constructing your own custom Raspberry Pi Pico Dev Board, see:
+For more information on printing your own custom Raspberry Pi Pico Dev Board, see:
 [Raspberry Pi Pico Dev Board][20]
 
 ## Usage
