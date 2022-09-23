@@ -102,7 +102,7 @@ Pico A VSYS -> Pico B VSYS
 ```
 
 For more information on connecting the two Raspberry Pi Picos, the wiring loom between them and its connections, see
-the section _Appendix A > Wiring Loom_ in:  [Getting Started with Raspberry Pi Pico][18]
+the section _Appendix A > Wiring Loom_ in: [Getting Started with Raspberry Pi Pico][18]
 
 #### Raspberry Pi Pico Dev Board
 Alternatively, a custom printed Raspberry Pi Pico Dev Board can be used to enhance development, which includes:
