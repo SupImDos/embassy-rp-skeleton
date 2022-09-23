@@ -118,7 +118,7 @@ An image of the custom printed Raspberry Pi Pico Dev board is shown below:
 
 <!-- Embed Image -->
 <p align="center">
-  <img width=50% src="https://user-images.githubusercontent.com/62866982/191897240-5912e684-fac9-4675-ba3c-2bad11afcd2f.png">
+  <img width=50% src="https://user-images.githubusercontent.com/62866982/191941119-a21dd273-d29b-49a5-8daf-5e4429268965.png">
 </p>
 
 For more information on printing your own custom Raspberry Pi Pico Dev Board, see:
