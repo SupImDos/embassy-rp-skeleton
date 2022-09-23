@@ -101,8 +101,8 @@ Pico A GP5/UART1 RX -> Pico B GP0/UART0 TX
 Pico A VSYS -> Pico B VSYS
 ```
 
-For more information on the wiring loom and its connections, see:
-[Getting Started with Raspberry Pi Pico > Appendix A > Picoprobe Wiring][18]
+For more information on the wiring loom and its connections, see _Appendix A > Wiring Loom_ in the guide here: 
+[Getting Started with Raspberry Pi Pico][18]
 
 #### Raspberry Pi Pico Dev Board
 Alternatively, a custom printed Raspberry Pi Pico Dev Board can be used to enhance development, which includes:
