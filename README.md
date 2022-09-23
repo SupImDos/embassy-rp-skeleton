@@ -117,6 +117,7 @@ For more information on printing your own custom Raspberry Pi Pico Dev Board, se
 [Raspberry Pi Pico Dev Board][21]
 
 ## Usage
+#### Running
 To run the firmware in debug mode:
 ```shell
 $ cargo run
@@ -127,6 +128,7 @@ To run the firmware in release mode:
 $ cargo run --release
 ```
 
+#### Logging
 To change the default [`defmt`][5] log level, see `.cargo/config.toml`:
 ```toml
 [env]
