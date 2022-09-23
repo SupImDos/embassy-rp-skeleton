@@ -87,7 +87,7 @@ Raspberry Pi Pico A as a debug probe.
 
 <!-- Embed Image -->
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/62866982/191892108-daabc0d6-5ec1-4265-8722-226c512b995c.svg">
+  <img width=50% src="https://user-images.githubusercontent.com/62866982/191892108-daabc0d6-5ec1-4265-8722-226c512b995c.svg">
 </p>
 
 The connections shown in the diagram above are listed below.
@@ -118,7 +118,7 @@ An image of the custom printed Raspberry Pi Pico Dev board is shown below:
 
 <!-- Embed Image -->
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/62866982/191897240-5912e684-fac9-4675-ba3c-2bad11afcd2f.png">
+  <img width=50% src="https://user-images.githubusercontent.com/62866982/191897240-5912e684-fac9-4675-ba3c-2bad11afcd2f.png">
 </p>
 
 For more information on printing your own custom Raspberry Pi Pico Dev Board, see:
