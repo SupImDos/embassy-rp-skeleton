@@ -118,7 +118,7 @@ An image of the custom printed Raspberry Pi Pico Dev board is shown below:
 
 <!-- Embed Image -->
 <p align="center">
-  <img src="https://timsavage.github.io/rpi-pico-devboard/assets/images/devboard-debugging.jpg">
+  <img src="https://user-images.githubusercontent.com/62866982/191897240-5912e684-fac9-4675-ba3c-2bad11afcd2f.png">
 </p>
 
 For more information on printing your own custom Raspberry Pi Pico Dev Board, see:
