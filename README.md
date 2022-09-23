@@ -85,7 +85,10 @@ compatible debug probes see: [Alternative Debug Probes][17].
 The diagram below shows the wiring loom between Raspberry Pi Pico A (left) and Raspberry Pi Pico B (right), configuring
 Raspberry Pi Pico A as a debug probe.
 
-![Raspberry Pi Pico Debug Probe Wiring][18]
+<!-- Embed Image -->
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/62866982/191892108-daabc0d6-5ec1-4265-8722-226c512b995c.svg">
+</p>
 
 The connections shown in the diagram above are listed below.
 
