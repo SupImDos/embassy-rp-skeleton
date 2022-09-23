@@ -102,7 +102,7 @@ Pico A VSYS -> Pico B VSYS
 ```
 
 For more information on the wiring loom and its connections, see:
-[Getting Started with Raspberry Pi Pico > Appendix A > Picoprobe Wiring][19]
+[Getting Started with Raspberry Pi Pico > Appendix A > Picoprobe Wiring][18]
 
 #### Raspberry Pi Pico Dev Board
 Alternatively, a custom printed Raspberry Pi Pico Dev Board can be used to enhance development, which includes:
@@ -120,7 +120,7 @@ Alternatively, a custom printed Raspberry Pi Pico Dev Board can be used to enhan
 </p>
 
 For more information on printing your own custom Raspberry Pi Pico Dev Board, see:
-[Raspberry Pi Pico Dev Board][21]
+[Raspberry Pi Pico Dev Board][19]
 
 ## Usage
 #### Running
@@ -164,17 +164,17 @@ $ DEFMT_LOG=error cargo run --release
 * [CMSIS-DAP Firmware `DapperMime`][16]
 
 #### Resources
-* [Rust Embedded Book][22]
-* [Awesome Embedded Rust][23]
-* [Getting Started with Raspberry Pi Pico][24]
-* [Ferrous Systems Embedded Training][25]
-* [Ferrous Systems Embedded Teaching Material][26]
-* [RP-RS App Template][27]
+* [Rust Embedded Book][20]
+* [Awesome Embedded Rust][21]
+* [Getting Started with Raspberry Pi Pico][22]
+* [Ferrous Systems Embedded Training][23]
+* [Ferrous Systems Embedded Teaching Material][24]
+* [RP-RS App Template][25]
 * [RP-RS Alternative Debug Probes][17]
 * [RP-RS Alternative Runners][14]
 * [Knurling-RS App Template][4]
 * [Probe-RS Probe Setup][9]
-* [Raspberry Pi Pico Dev Board][21]
+* [Raspberry Pi Pico Dev Board][19]
 
 
 <!-- Reference -->
@@ -195,11 +195,11 @@ $ DEFMT_LOG=error cargo run --release
 [15]: https://rustup.rs/
 [16]: https://github.com/majbthrd/DapperMime
 [17]: https://github.com/rp-rs/rp2040-project-template/blob/main/debug_probes.md
-[19]: https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf#%5B%7B%22num%22%3A64%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C115%2C696.992%2Cnull%5D
-[21]: https://timsavage.github.io/rpi-pico-devboard/
-[22]: https://docs.rust-embedded.org/book/
-[23]: https://github.com/rust-embedded/awesome-embedded-rust
-[24]: https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf
-[25]: https://embedded-trainings.ferrous-systems.com/
-[26]: https://github.com/ferrous-systems/teaching-material
-[27]: https://github.com/rp-rs/rp2040-project-template
+[18]: https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf#%5B%7B%22num%22%3A64%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C115%2C696.992%2Cnull%5D
+[19]: https://timsavage.github.io/rpi-pico-devboard/
+[20]: https://docs.rust-embedded.org/book/
+[21]: https://github.com/rust-embedded/awesome-embedded-rust
+[22]: https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf
+[23]: https://embedded-trainings.ferrous-systems.com/
+[24]: https://github.com/ferrous-systems/teaching-material
+[25]: https://github.com/rp-rs/rp2040-project-template
