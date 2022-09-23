@@ -114,7 +114,10 @@ Alternatively, a custom printed Raspberry Pi Pico Dev Board can be used to enhan
 * Breakout Pins
 * Selection of _VSys_ or _VBus_ Power Sources
 
-![Raspberry Pi Pico Dev Board Debugging][20]
+<!-- Embed Image -->
+<p align="center">
+  <img src="https://timsavage.github.io/rpi-pico-devboard/assets/images/devboard-debugging.jpg">
+</p>
 
 For more information on printing your own custom Raspberry Pi Pico Dev Board, see:
 [Raspberry Pi Pico Dev Board][21]
@@ -192,9 +195,7 @@ $ DEFMT_LOG=error cargo run --release
 [15]: https://rustup.rs/
 [16]: https://github.com/majbthrd/DapperMime
 [17]: https://github.com/rp-rs/rp2040-project-template/blob/main/debug_probes.md
-[18]: https://user-images.githubusercontent.com/12226419/134785445-5f651d5a-eda9-4e94-8860-d2ef619dc27a.png
 [19]: https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf#%5B%7B%22num%22%3A64%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C115%2C696.992%2Cnull%5D
-[20]: https://timsavage.github.io/rpi-pico-devboard/assets/images/devboard-debugging.jpg
 [21]: https://timsavage.github.io/rpi-pico-devboard/
 [22]: https://docs.rust-embedded.org/book/
 [23]: https://github.com/rust-embedded/awesome-embedded-rust
