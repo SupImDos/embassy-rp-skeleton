@@ -114,7 +114,7 @@ Alternatively, a custom printed Raspberry Pi Pico Dev Board can be used to enhan
 * Breakout Pins
 * Selection of _VSys_ or _VBus_ Power Sources
 
-An image of the custom printed Raspberry Pi Pico Dev board is shown below:
+The custom printed Raspberry Pi Pico Dev board is shown below:
 
 <!-- Embed Image -->
 <p align="center">
