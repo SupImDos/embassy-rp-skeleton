@@ -1,6 +1,6 @@
 <!-- Title -->
 <p align="center">
-  <img width=15% src="https://www.svgrepo.com/show/296343/microchip.svg">
+  <img width=15% src="https://www.svgrepo.com/show/68860/microchip.svg">
   <h1 align="center">Embassy RP Skeleton</h1>
 </p>
 
