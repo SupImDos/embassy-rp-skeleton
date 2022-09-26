@@ -1,4 +1,9 @@
-# Embassy RP Skeleton
+<!-- Title -->
+<p align="center">
+  <img width=15% src="https://www.svgrepo.com/show/296343/microchip.svg">
+  <h1 align="center">Embassy RP Skeleton</h1>
+</p>
+
 The **Embassy RP Skeleton** repository is a project template intended as a starting point for developing your own
 firmware for the [`rp2040`][1] based on the [`embassy`][2] asynchronous embedded development framework for [Rust][3].
 
