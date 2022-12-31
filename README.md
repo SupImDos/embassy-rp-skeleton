@@ -70,7 +70,7 @@ $ sudo usermod -aG plugdev $USER
 4. Install [`flip-link`][6]
 ```shell
 # Install `flip-link`
-$ $ cargo install flip-link
+$ cargo install flip-link
 ```
 
 ### Probe Setup
