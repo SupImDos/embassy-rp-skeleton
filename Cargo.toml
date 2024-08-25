@@ -26,4 +26,3 @@ debug = true
 
 [profile.dev]
 lto = true
-debug = true
